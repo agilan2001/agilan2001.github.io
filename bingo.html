@@ -1,0 +1,79 @@
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initia-scale=1.0">
+</head>
+<body>
+Players online:<br>
+FREE:
+<p id = "p_on_free"></p>
+Match:
+<p id = "p_on_mat"></p>
+</body>
+
+<script src="https://www.gstatic.com/firebasejs/7.14.1/firebase.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyD2WhuMawLf_0c6JpRIkPzrNeXVcVEJW5c",
+    authDomain: "bingo-2f00d.firebaseapp.com",
+    databaseURL: "https://bingo-2f00d.firebaseio.com",
+    projectId: "bingo-2f00d",
+    storageBucket: "bingo-2f00d.appspot.com",
+    messagingSenderId: "219010989455",
+    appId: "1:219010989455:web:e1fceca7395417cae2dffa",
+    measurementId: "G-PLWBKVV1QP"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+<script>
+var name = prompt("Enter Name:");
+
+var db = firebase.database();
+var p_key = db.ref("pl_on").push().key;
+db.ref("pl_on/"+p_key).set({
+	name: name,
+	match: 0,
+  inv_from:0
+});
+
+db.ref("pl_on/"+p_key+"/inv_from").on("value",function(s){
+
+  if(s.val()!=0){
+
+    db.ref("pl_on/"+s.val()+"/name").once("value",function(t){
+
+      var per = confirm("ACCEPT invite from "+t.val()+"?");
+      if(per){
+        db.ref("pl_on/"+s.val()+"/match").set(1);
+        db.ref("pl_on/"+p_key+"/match").set(1);
+
+      }
+    });
+  }
+});
+
+db.ref('pl_on').on('value',function(s){
+	p_on_free.innerHTML="";
+	p_on_mat.innerHTML="";
+	s.forEach(function fun(e){
+		if(e.val()["match"]==0)
+			p_on_free.innerHTML+=`<span onClick='inv(\"${e.key}\")';>${e.val()["name"]}</span><br>`;
+		else
+			p_on_mat.innerHTML+="<span>"+e.val()["name"]+"</span><br>";
+	});
+})
+
+window.onunload = function () {
+	db.ref("pl_on/"+p_key).remove();
+}
+
+function inv(k){
+  if (k==p_key) return;
+  db.ref("pl_on/"+k+"/inv_from").set(p_key);
+}
+
+</script>
+</html>
