@@ -245,6 +245,19 @@ body{
 </script>
 <script>
 var name = (prompt("Enter Name:")||"GUY"+parseInt(Math.random()*10000)).toUpperCase();
+//to hide keyboard
+var field = document.createElement('input');
+field.setAttribute('type', 'text');
+document.body.appendChild(field);
+
+setTimeout(function() {
+    field.focus();
+    setTimeout(function() {
+        field.setAttribute('style', 'display:none;');
+    }, 50);
+}, 50);
+//
+
 var op_name;
 var my_sc;
 var op_sc;
@@ -307,22 +320,28 @@ function init(){
     }
   });
 
-  b_ref=db.ref('pl_on').on('value',function(s){
+  b_ref=db.ref('pl_on').orderByKey().on('value',function(s){
     var busy=0;
+    var pl_on_key=[];
+    var pl_on_name=[];
   	p_on_free.innerHTML="";
   	p_on_mat.innerHTML="";
   	s.forEach(function fun(e){
       if(e.key=="null") db.ref("pl_on/null").remove();
       if(e.key!=p_key){
-    		if(e.val()["match"]==0)
-    			p_on_free.innerHTML+=`<span class="span_free" onClick='inv("${e.key}")';>${e.val()["name"]}</span>`;
+    		if(e.val()["match"]==0){
+          pl_on_key.push(e.key);
+          pl_on_name.push(e.val()["name"]);
+        }
     		else
     			busy++;
-        }
+      }
   	});
+    for(var jk=pl_on_key.length-1;jk>=0;jk--){
+      p_on_free.innerHTML+=`<span class="span_free" onClick='inv("${pl_on_key[jk]}");'>${pl_on_name[jk]}</span>`;
+    }
     p_on_mat.innerHTML="Players BUSY: "+busy;
   });
-}
 
 window.onbeforeunload = function () {
 	db.ref("pl_on/"+p_key).remove();
