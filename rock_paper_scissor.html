@@ -605,6 +605,7 @@ function replay_sub(){
 function act_bot(){
   bot_mode=1;
   play();
+  db.ref("pl_on/"+p_key+"/match").set("BOT");
 }
 </script>
 
