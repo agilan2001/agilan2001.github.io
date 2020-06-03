@@ -1,0 +1,55 @@
+<html>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="res/firebase-app.js"></script>
+<script src="res/firebase-auth.js"></script>
+<script src="res/firebase-database.js"></script>
+<script>
+  var firebaseConfig = {
+    apiKey: "AIzaSyCL-uSFqlGD7HEKa4PHAVusT62k4mkZNpg",
+    authDomain: "test-3bd4b.firebaseapp.com",
+    databaseURL: "https://test-3bd4b.firebaseio.com",
+    projectId: "test-3bd4b",
+    storageBucket: "test-3bd4b.appspot.com",
+    messagingSenderId: "741527072483",
+    appId: "1:741527072483:web:39e80c1ceacefee4295fd6",
+    measurementId: "G-RZ3708BW3P"
+  };
+  firebase.initializeApp(firebaseConfig);
+</script>
+<script>
+    var provider = new firebase.auth.GoogleAuthProvider();
+
+function googleSignin() {
+   firebase.auth()
+   
+   .signInWithPopup(provider).then(function(result) {
+      var token = result.credential.accessToken;
+      var user = result.user;
+		
+      console.log(token)
+      console.log(user)
+   }).catch(function(error) {
+      var errorCode = error.code;
+      var errorMessage = error.message;
+		
+      console.log(error.code)
+      console.log(error.message)
+   });
+}
+
+function googleSignout() {
+   firebase.auth().signOut()
+	
+   .then(function() {
+      console.log('Signout Succesfull')
+   }, function(error) {
+      console.log('Signout Failed')  
+   });
+}
+</script>
+<body>
+    <button onclick = "googleSignin()">Google Signin</button>
+    <button onclick = "googleSignout()">Google Signout</button>
+</body>
+
+</html>
