@@ -6,16 +6,14 @@
 <script>
 function send(){
 Email.send({
-	Host: "smtp.gmail.com",
-	Username : "agilanvlr2001@gmail.com",
-	Password : "Ikaa@2001",
-	To : 'agilanvlr2001@gmail.com',
-	From : "agilanvlr2001@gmail.com",
-	Subject : "sub",
-	Body : "body",
-	}).then(
-		message => alert(message)
-	);
+    SecureToken : "be0d0bab-dfee-488e-92f1-55c973ca63f3",
+    To : 'agilanvlr2001@gmail.com',
+    From : "agilanvlr2001@gmail.com",
+    Subject : "This is the subject",
+    Body : "And this is the body"
+}).then(
+  message => alert(message)
+);
 }
 </script>
 </html>
