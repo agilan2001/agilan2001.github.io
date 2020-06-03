@@ -1,0 +1,32 @@
+<html>
+<body>
+	<button onClick="send();">Send</button>
+</body>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+function send(){
+Email.send({
+	Host: "smtp.gmail.com",
+	Username : "agilanvlr2001@gmail.com",
+	Password : "Ikaa@2001",
+	To : 'agilanvlr2001@gmail.com',
+	From : "agilanvlr2001@gmail.com",
+	Subject : "sub",
+	Body : "body",
+	}).then(
+		message => alert(message)
+	);
+}
+</script>
+</html>
+<!--
+curl --request POST \
+  --url https://api.sendgrid.com/v3/mail/send \
+  --header 'Authorization: Bearer YOUR_API_KEY' \
+  --header 'Content-Type: application/json' \
+  --data '{"personalizations": [{"to": [{"email": "example@example.com"}]}],"from": {"email": "example@example.com"},"subject": "Hello, World!","content": [{"type": "text/plain", "value": "Heya!"}]}'
+  
+  Authorization: Bearer $SENDGRID_API_KEY" \
+  --header 'Content-Type: application/json' \
+  --data '{"personalizations": [{"to": [{"email": "test@example.com"}]}],"from": {"email": "test@example.com"},"subject": "Sending with SendGrid is Fun","content": [{"type": "text/plain", "value": "and easy to do anywhere, even with cURL"}]}'
+-->
