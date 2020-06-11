@@ -19,7 +19,9 @@
 </script>
 <script>
    
-   window.recaptchaVerifier = new firebase.auth.RecaptchaVerifier("phone_sign", {
+  
+   var provider = new firebase.auth.GoogleAuthProvider();
+    window.recaptchaVerifier = new firebase.auth.RecaptchaVerifier("phone_sign", {
   'size': 'invisible',
   'callback': function(response) {
     // reCAPTCHA solved, allow signInWithPhoneNumber.
@@ -27,7 +29,6 @@
   }
 });
    
-   var provider = new firebase.auth.GoogleAuthProvider();
 
    function googleSignin() {
       firebase.auth()
