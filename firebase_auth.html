@@ -63,7 +63,11 @@
             // ...
          });
 
-      var code = prompt("Enter Code");
+     
+   }
+   
+   function phonecode(){
+       var code = prompt("Enter Code");
       confirmationResult.confirm(code).then(function (result) {
          // User signed in successfully.
          var user = result.user;
@@ -74,6 +78,7 @@
          // User couldn't sign in (bad verification code?)
          // ...
       });
+      
    }
 </script>
 
@@ -81,6 +86,7 @@
    <button onclick="googleSignin()">Google Signin</button>
    <button onclick="googleSignout()">Google Signout</button>
    <button onclick="phonesignin()">Phone sign in</button>
+   <button onclick="phonecode()">Phone enter code</button>
 
    <div id='recaptcha-container'></div>
 </body>
