@@ -36,9 +36,13 @@ self.addEventListener('notificationclick', function(event) {
 
   if (event.action === 'g') {  
     clients.openWindow("https://www.google.com/")
+    return;
   }  
   else if (event.action === 's') {  
     clients.openWindow("https://www.sololearn.com/Profile/14014563/?ref=app");  
+    return;
   }  
+  
+  clients.openWindow("https://agilan2001.github.io");  
   
   }, false);
