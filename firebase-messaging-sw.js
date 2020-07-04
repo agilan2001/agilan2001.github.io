@@ -20,7 +20,10 @@ messaging.setBackgroundMessageHandler(function(payload) {
   const notificationTitle = notification.title;
   const notificationOptions = {
     body: notification.body,
-    icon: notification.icon
+    icon: notification.icon,
+    actions: [  
+      {action: 'g', title: '👍GOOGLE'},  
+      {action: 's', title: '⤻ SoloLearn'}]  
   };
 
   return self.registration.showNotification(notificationTitle,
@@ -29,7 +32,13 @@ messaging.setBackgroundMessageHandler(function(payload) {
 
 self.addEventListener('notificationclick', function(event) {
 
-  clients.openWindow("https://agilan2001.github.io")
-  
+  event.notification.close();  
 
-}, false);
+  if (event.action === 'g') {  
+    clients.openWindow("https://www.google.com/")
+  }  
+  else if (event.action === 's') {  
+    clients.openWindow("https://www.sololearn.com/Profile/14014563/?ref=app");  
+  }  
+  
+  }, false);
