@@ -21,6 +21,7 @@ messaging.setBackgroundMessageHandler(function(payload) {
   const notificationOptions = {
     body: notification.body,
     icon: notification.icon,
+    image: notification.icon,
     actions: [  
       {action: 'g', title: '👍GOOGLE'},  
       {action: 's', title: '⤻ SoloLearn'}]  
