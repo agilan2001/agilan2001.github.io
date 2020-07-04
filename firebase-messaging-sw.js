@@ -26,3 +26,10 @@ messaging.setBackgroundMessageHandler(function(payload) {
   return self.registration.showNotification(notificationTitle,
       notificationOptions);
 });
+
+self.addEventListener('notificationclick', function(event) {
+
+  clients.openWindow("https://agilan2001.github.io")
+  
+
+}, false);
