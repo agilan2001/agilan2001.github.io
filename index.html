@@ -314,7 +314,7 @@
       if (msg_area.value) {
         msg_resp.innerHTML = "Thank you for your response";
         $.ajax({
-          url: location.origin + "/sendMsg",
+          url: "https://agilan-pro.firebaseapp.com/sendMsg",
           type: "POST",
           data: { name: msg_name.value, tel: msg_phone.value, mail: msg_mail.value, msg: msg_area.value, date: Date.now() }
         })
