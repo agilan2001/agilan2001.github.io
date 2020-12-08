@@ -42,9 +42,6 @@
   <!-- CSS-->
   <link rel="stylesheet" href="style.css?q=p">
 
-  <!-- Adsense -->
-  <script data-ad-client="ca-pub-9623039278843283" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-
 
 </head>
 
@@ -142,21 +139,23 @@
 
         <table id="resume_personal_table" class="table">
           <tr>
+            <td rowspan="3" style="padding-right: 4px;text-align: right;"><img src="photo.jpg"
+                style="width: 100px; border-radius: 10px;"></td>
             <td class="resume_table_detail">Age</td>
             <td id="age_td"></td>
-            <td rowspan="3"><img src="photo.jpg" style="width: 100px; border-radius: 10px;"></td>
+
           </tr>
           <tr>
             <td class="resume_table_detail">Gender</td>
             <td>Male</td>
           </tr>
           <tr>
-            <td class="resume_table_detail">Email</td>
-            <td><a href="mailto:agilanvlr2001@gmail.com">agilanvlr2001@gmail.com</a></td>
+            <td class="resume_table_detail">Mobile</td>
+            <td>9384495336</td>
           </tr>
           <tr>
-            <td class="resume_table_detail">Mobile</td>
-            <td colspan="2">9384495336</td>
+            <td class="resume_table_detail">Email</td>
+            <td colspan="2"><a href="mailto:agilanvlr2001@gmail.com">agilanvlr2001@gmail.com</a></td>
           </tr>
           <tr>
             <td class="resume_table_detail">Address</td>
@@ -210,10 +209,11 @@
           <!-- <span class="glyphicon glyphicon-envelope"></span> -->
           <a href="mailto:agilanvlr2001@gmail.com">agilanvlr2001@gmail.com</a>
         </div>
+        <!--
         <div>
           People About Me !
         </div>
-
+        -->
       </div>
       <br><br><br><br><br>
     </div>
@@ -238,7 +238,7 @@
       )
     }
     const ProgLangComp = () => {
-      var lang = ["C", "C++", "Java:(beginner)", "VB", "Python:(beginner)"];
+      var lang = ["C", "C++", "Java", "VB", "Python:(beginner)"];
       return (
         lang.map((e, i) => (
           <ImgCaption data={e} />
@@ -315,11 +315,23 @@
 
     function send_msg() {
       if (msg_area.value) {
+
         msg_resp.innerHTML = "Thank you for your response";
+        /*
         $.ajax({
-          url: "https://agilan-pro.firebaseapp.com/sendMsg",
+          //url: location.origin + "/sendMsg",
+          url: "https://zxhxqzuqr3.execute-api.us-east-2.amazonaws.com/default/agi-pro-email",
           type: "POST",
           data: { name: msg_name.value, tel: msg_phone.value, mail: msg_mail.value, msg: msg_area.value, date: Date.now() }
+        })*/
+
+
+        fetch('https://zxhxqzuqr3.execute-api.us-east-2.amazonaws.com/default/agi-pro-email', {
+          method: 'POST', // or 'PUT'
+          mode: 'no-cors',
+          body: JSON.stringify({
+            name: msg_name.value, tel: msg_phone.value, mail: msg_mail.value, msg: msg_area.value, date: Date.now()
+          }),
         })
       }
 
