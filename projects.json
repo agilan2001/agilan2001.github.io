@@ -4,7 +4,7 @@
             "title": "Notify-Me",
             "desc": "Browser Based Notification Reminders and Email Alerts",
             "tech": [
-                "<b>PWA</b> Implementation",
+                "PWA Implementation",
                 "Cloud FireStore",
                 "Cloud Functions",
                 "Firebase Hosting",
@@ -19,7 +19,7 @@
             "title": "Hand Cricket League",
             "desc": "Play Hand Cricket 👍 with your Friends from anywhere",
             "tech": [
-                "<b>PWA</b> Implementation",
+                "PWA Implementation",
                 "Firebse RTDatabase",
                 "Firebase Hosting"
             ],
