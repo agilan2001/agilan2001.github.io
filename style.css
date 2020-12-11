@@ -73,6 +73,7 @@ body {
     position: relative;
     box-shadow: 6px 5px 2px floralwhite;
     border: 1px solid floralwhite;
+    min-height: 220px;
 }
 
 .proj_div_title {

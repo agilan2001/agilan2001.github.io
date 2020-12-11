@@ -51,6 +51,17 @@
                 "<i style='color:black;' class='fab fa-github'></i> Git Repo": "https://github.com/agilan2001/rock_paper_scissor",
                 "<i class='fas fa-link'></i> Live Site": "https://agilan2001.github.io/rock_paper_scissor/"
             }
+        },
+        {
+            "title": "Flames 🔥",
+            "desc": "Minimalistic FLAMES Calculator with Plain Javascript",
+            "tech": [
+                "WhatsApp Share API"
+            ],
+            "link": {
+                "<i style='color:black;' class='fab fa-github'></i> Git Repo": "https://github.com/agilan2001/flames",
+                "<i class='fas fa-link'></i> Live Site": "https://agilan2001.github.io/flames"
+            }
         }
     ],
     "API": [
