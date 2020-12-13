@@ -105,16 +105,17 @@
             }
         },
         {
-            "title": "Prompt (!--Beta--!)",
-            "desc": "Notification Reminder and Timetable Scheduler",
+            "title": "Prompt",
+            "desc": "Notification Reminder",
             "tech": [
                 "AsyncStorage",
                 "ReactNative Paper",
-                "React Navigation",
-                "ReactNative Animatable"
+                "ReactNative Animatable",
+                "ReactNative Notifications"
             ],
             "link": {
-                
+                "<i style='color:green' class='fab fa-android'></i> Android": "https://github.com/agilan2001/Prompt/blob/master/app-armeabi-v7a-release.apk?raw=true",
+                "<i style='color:black;' class='fab fa-github'></i> Git Repo": "https://github.com/agilan2001/Prompt"             
             }
         }
     ]
