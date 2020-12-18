@@ -4,7 +4,7 @@ body {
 }
 
 #hdr {
-    background-image: linear-gradient(white,lightseagreen);
+    background-image: linear-gradient(white, lightseagreen);
     padding: 5px;
 }
 
@@ -19,6 +19,7 @@ body {
     color: crimson;
     font-family: 'Alfa Slab One';
     text-align: center;
+    animation: letter-anim 2s ease-in-out infinite alternate;
 }
 
 #main_desc {
@@ -74,6 +75,11 @@ body {
     box-shadow: 6px 5px 2px floralwhite;
     border: 1px solid floralwhite;
     min-height: 220px;
+    transition: background-color 1s;
+}
+
+.proj_div:hover{
+    background-color: darkred;
 }
 
 .proj_div_title {
@@ -137,8 +143,8 @@ body {
     border-radius: 0 10px 10px 0;
 }
 
-.whats_btn, .call_btn{
-    width:35px;
+.whats_btn, .call_btn {
+    width: 35px;
 }
 
 .call_btn {
@@ -234,16 +240,33 @@ body {
     display: block;
     margin: auto;
 }
-#projects{
-    background-image: linear-gradient(90deg,black,rgb(0,150,0) 50%, black);
+
+#projects {
+    background-image: linear-gradient(90deg, black, rgb(0, 150, 0) 50%, black);
 }
 
-#resume{
-    background-image: linear-gradient(90deg,black,indigo 50%, black);
+#resume {
+    background-image: linear-gradient(90deg, black, indigo 50%, black);
 }
 
-#contact{
-    background-image: linear-gradient(90deg,black,darkred 50%, black);
+#contact {
+    background-image: linear-gradient(90deg, black, darkred 50%, black);
     min-height: 80vh;
 }
 
+.imgCaption {
+    width: fit-content;
+    border: 2px solid greenyellow;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 2px;
+}
+
+@keyframes letter-anim {
+    0% {
+        letter-spacing: normal;
+    }
+    100% {
+        letter-spacing: 10px;
+    }
+}

@@ -223,7 +223,7 @@
 
 
     const ImgCaption = ({ data }) => (
-      <div style={{ width: 'fit-content', border: '2px solid greenyellow', borderRadius: '10px', margin: '5px', padding: '2px' }}>
+      <div className="imgCaption">
         <img src={"./icons/" + data.split(":")[0] + ".png"} style={{ width: '80px', display: 'block', margin: 'auto' }} />
         <div style={{ textAlign: "center" }}>{data.split(":")[0]}<div style={{ fontSize: 'small' }}>{data.split(":")[1]}</div></div>
       </div>
