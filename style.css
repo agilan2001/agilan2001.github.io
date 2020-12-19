@@ -253,13 +253,17 @@ body {
     background-image: linear-gradient(90deg, black, darkred 50%, black);
     min-height: 80vh;
 }
-
+.imgCaption:hover{
+    border-color: red;
+    color:red;
+}
 .imgCaption {
     width: fit-content;
     border: 2px solid greenyellow;
     border-radius: 10px;
     margin: 5px;
     padding: 2px;
+    transition: all 0.5s;
 }
 
 @keyframes letter-anim {
