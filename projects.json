@@ -1,6 +1,20 @@
 {
     "WEB": [
         {
+            "title": "Share-Kural",
+            "desc": "Web Application to search and share Thirukkural as PNG images",
+            "tech": [
+                "HTML Canvas",
+                "Bootstrap CSS",
+                "FireBase RealTime Database",
+                "Web Share API"
+            ],
+            "link": {
+                "<i style='color:black;' class='fab fa-github'></i> Git Repo": "https://github.com/agilan2001/share-kural",
+                "<i class='fas fa-link'></i> Live Site": "https://share-kural.web.app/"
+            }
+        },
+        {
             "title": "Notify-Me",
             "desc": "Browser Based Notification Reminders and Email Alerts",
             "tech": [
@@ -115,7 +129,7 @@
             ],
             "link": {
                 "<i style='color:green' class='fab fa-android'></i> Android": "https://github.com/agilan2001/Prompt/blob/master/app-armeabi-v7a-release.apk?raw=true",
-                "<i style='color:black;' class='fab fa-github'></i> Git Repo": "https://github.com/agilan2001/Prompt"             
+                "<i style='color:black;' class='fab fa-github'></i> Git Repo": "https://github.com/agilan2001/Prompt"
             }
         }
     ]
