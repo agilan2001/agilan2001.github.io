@@ -242,15 +242,15 @@ body {
 }
 
 #projects {
-    background-image: linear-gradient(90deg, black, rgb(0, 150, 0) 50%, black);
+    background-image: linear-gradient(90deg, rgb(0,50,0), rgb(0, 150, 0) 50%, rgb(0,50,0));
 }
 
 #resume {
-    background-image: linear-gradient(90deg, black, indigo 50%, black);
+    background-image: linear-gradient(90deg, rgba(75,0,130,0.4), rgba(75,0,130,1) 50%, rgba(75,0,130,0.4));
 }
 
 #contact {
-    background-image: linear-gradient(90deg, black, darkred 50%, black);
+    background-image: linear-gradient(90deg, rgba(140,0,0,0.4), rgba(140,0,0,1) 50%, rgba(140,0,0,0.4));
     min-height: 80vh;
 }
 .imgCaption:hover{
