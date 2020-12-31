@@ -1,6 +1,22 @@
 {
     "WEB": [
         {
+            "title": "Mail-Opened?",
+            "desc": "Web App for Invisible Email Trackers to notify when an Email is opened",
+            "tech": [
+                "Firebase Authentication",
+                "Firebase Cloud Messaging",
+                "Firebase RealTime Database",
+                "Firebase Hosting",
+                "AWS Lambda functions",
+                "Bootstrap CSS"
+            ],
+            "link": {
+                "<i style='color:black;' class='fab fa-github'></i> Git Repo": "https://github.com/agilan2001/mail-opened",
+                "<i class='fas fa-link'></i> Live Site": "https://mail-opened.web.app/"
+            }
+        },
+        {
             "title": "Share-Kural",
             "desc": "Web Application to search and share Thirukkural as PNG images",
             "tech": [
