@@ -2,7 +2,7 @@
     "WEB": [
         {
             "title": "Mail-Opened?",
-            "desc": "Web App for Invisible Email Trackers to notify when an Email is opened",
+            "desc": "Web App to implant Invisible Email Trackers to notify when an Email is opened",
             "tech": [
                 "Firebase Authentication",
                 "Firebase Cloud Messaging",
