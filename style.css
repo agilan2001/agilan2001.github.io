@@ -78,7 +78,7 @@ body {
     transition: background-color 1s;
 }
 
-.proj_div:hover{
+.proj_div:hover {
     background-color: darkred;
 }
 
@@ -242,21 +242,23 @@ body {
 }
 
 #projects {
-    background-image: linear-gradient(90deg, rgb(0,50,0), rgb(0, 150, 0) 50%, rgb(0,50,0));
+    background-image: linear-gradient(90deg, rgb(0, 50, 0), rgb(0, 150, 0) 50%, rgb(0, 50, 0));
 }
 
 #resume {
-    background-image: linear-gradient(90deg, rgba(75,0,130,0.4), rgba(75,0,130,1) 50%, rgba(75,0,130,0.4));
+    background-image: linear-gradient(90deg, rgba(75, 0, 130, 0.4), rgba(75, 0, 130, 1) 50%, rgba(75, 0, 130, 0.4));
 }
 
 #contact {
-    background-image: linear-gradient(90deg, rgba(140,0,0,0.4), rgba(140,0,0,1) 50%, rgba(140,0,0,0.4));
+    background-image: linear-gradient(90deg, rgba(140, 0, 0, 0.4), rgba(140, 0, 0, 1) 50%, rgba(140, 0, 0, 0.4));
     min-height: 80vh;
 }
-.imgCaption:hover{
+
+.imgCaption:hover {
     border-color: red;
-    color:red;
+    color: red;
 }
+
 .imgCaption {
     width: fit-content;
     border: 2px solid greenyellow;
@@ -273,4 +275,15 @@ body {
     100% {
         letter-spacing: 10px;
     }
+}
+
+.cert_comp {
+    display: flex;
+    flex-direction: row;
+    border: 2px solid orange;
+    padding: 10px;
+    width: 350px;
+    margin: 8px;
+    position: relative;
+    border-radius: 10px;
 }
