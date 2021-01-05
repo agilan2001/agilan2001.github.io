@@ -235,6 +235,14 @@ body {
     background-color: mediumpurple;
 }
 
+#resume_education_table{
+    white-space: nowrap;
+}
+
+#resume_education_table tr td:nth-child(n+3), th:nth-child(n+3) {
+    text-align: center;
+}
+
 .prog-icon {
     height: 50px;
     display: block;
