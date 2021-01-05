@@ -30,7 +30,7 @@ const CertComp = ({ data }) => (
         <img src={"./icons/" + data.issue + ".png"} style={{ width: '80px', margin: 'auto 10px' }} />
         <div>
             <div style={{ fontWeight: 'bold', fontSize: 'larger' }}>{data.title}</div>
-            <div>Issued By :  <span style={{ color: 'red' }}>{data.issue}</span></div>
+            <div><span style={{ color: 'red' }}>{data.issue}</span></div>
             <span style={{ fontStyle: 'oblique', fontSize: 'smaller' }}>{data.date}</span>
             <a target={"_blank"} href={data.url} className={'btn btn-primary'} style={{ position: 'absolute', right: '10px', bottom: '5px' }}>View</a>
         </div>
@@ -50,7 +50,8 @@ const TestimonComp = () => (
     { title: "React Course", url: "https://www.sololearn.com/Certificate/1097-14014563/pdf/", issue: "SoloLearn", date: "25 July,2020" },
     { title: "Problem Solving", url: "https://www.hackerrank.com/certificates/8ae71dec3276", issue: "HackerRank", date: "24 Dec,2020" },
     { title: "JavaScript (Basic)", url: "https://www.hackerrank.com/certificates/0f563ef4302a", issue: "HackerRank", date: "26 Aug,2020" },
-    { title: "Java (Basic)", url: "https://www.hackerrank.com/certificates/8f1b03694fc9", issue: "HackerRank", date: "15 Dec,2020" },].map(
+    { title: "Java (Basic)", url: "https://www.hackerrank.com/certificates/8f1b03694fc9", issue: "HackerRank", date: "15 Dec,2020" },
+    { title: "TypeMaster", url: "https://data.typeracer.com/pit/profile?user=agilan2001&universe=play&ref=badge", issue: "TypeRacer", date: "5 Jan,2021" },].map(
         (e, i) => (
             <CertComp data={e} />
         )

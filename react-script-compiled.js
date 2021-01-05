@@ -51,7 +51,7 @@ const CertComp = ({
     fontWeight: 'bold',
     fontSize: 'larger'
   }
-}, data.title), /*#__PURE__*/React.createElement("div", null, "Issued By :  ", /*#__PURE__*/React.createElement("span", {
+}, data.title), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("span", {
   style: {
     color: 'red'
   }
@@ -126,6 +126,11 @@ const TestimonComp = () => [{
   url: "https://www.hackerrank.com/certificates/8f1b03694fc9",
   issue: "HackerRank",
   date: "15 Dec,2020"
+}, {
+  title: "TypeMaster",
+  url: "https://data.typeracer.com/pit/profile?user=agilan2001&universe=play&ref=badge",
+  issue: "TypeRacer",
+  date: "5 Jan,2021"
 }].map((e, i) => /*#__PURE__*/React.createElement(CertComp, {
   data: e
 }));
