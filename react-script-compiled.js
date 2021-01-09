@@ -46,7 +46,12 @@ const CertComp = ({
     width: '80px',
     margin: 'auto 10px'
   }
-}), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("div", {
+}), /*#__PURE__*/React.createElement("div", {
+  style: {
+    height: 'fit-content',
+    margin: 'auto 0'
+  }
+}, /*#__PURE__*/React.createElement("div", {
   style: {
     fontWeight: 'bold',
     fontSize: 'larger'
@@ -72,6 +77,11 @@ const CertComp = ({
 }, "View")));
 
 const TestimonComp = () => [{
+  title: "Algorithmic ToolBox",
+  url: "https://coursera.org/share/2ffcfeda1ad47ba3af1695d3c08cbf0e",
+  issue: "Coursera - University of California, San Diego",
+  date: "9 Jan,2021"
+}, {
   title: "C Programming",
   url: "https://www.sololearn.com/Certificate/1089-14014563/pdf/",
   issue: "SoloLearn",

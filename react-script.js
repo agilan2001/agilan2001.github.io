@@ -28,7 +28,7 @@ const ProgLangComp = () => {
 const CertComp = ({ data }) => (
     <div className="cert_comp">
         <img src={"./icons/" + data.issue + ".png"} style={{ width: '80px', margin: 'auto 10px' }} />
-        <div>
+        <div style={{height:'fit-content', margin:'auto 0'}}>
             <div style={{ fontWeight: 'bold', fontSize: 'larger' }}>{data.title}</div>
             <div><span style={{ color: 'red' }}>{data.issue}</span></div>
             <span style={{ fontStyle: 'oblique', fontSize: 'smaller' }}>{data.date}</span>
@@ -40,7 +40,8 @@ const CertComp = ({ data }) => (
 
 
 const TestimonComp = () => (
-    [{ title: "C Programming", url: "https://www.sololearn.com/Certificate/1089-14014563/pdf/", issue: "SoloLearn", date: "16 May,2019" },
+    [{ title: "Algorithmic ToolBox", url: "https://coursera.org/share/2ffcfeda1ad47ba3af1695d3c08cbf0e", issue: "Coursera - University of California, San Diego", date: "9 Jan,2021" },
+    { title: "C Programming", url: "https://www.sololearn.com/Certificate/1089-14014563/pdf/", issue: "SoloLearn", date: "16 May,2019" },
     { title: "C++ Programming", url: "https://www.sololearn.com/Certificate/1051-14014563/pdf/", issue: "SoloLearn", date: "07 Dec,2019" },
     { title: "Java Programming", url: "https://www.sololearn.com/Certificate/1068-14014563/pdf/", issue: "SoloLearn", date: "22 Aug,2020" },
     { title: "HTML Course", url: "https://www.sololearn.com/Certificate/1014-14014563/pdf/", issue: "SoloLearn", date: "07 May,2019" },
