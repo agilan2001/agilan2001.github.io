@@ -3,6 +3,7 @@
         {
             "title": "Mail-Opened?",
             "desc": "Web App to implant Invisible Email Trackers to notify when an Email is opened",
+            "icon":"mail-opened",
             "tech": [
                 "Firebase Authentication",
                 "Firebase Cloud Messaging",
@@ -19,6 +20,7 @@
         {
             "title": "Share-Kural",
             "desc": "Web Application to search and share Thirukkural as PNG images",
+            "icon":"share-kural",
             "tech": [
                 "HTML Canvas",
                 "Bootstrap CSS",
@@ -33,6 +35,7 @@
         {
             "title": "Notify-Me",
             "desc": "Browser Based Notification Reminders and Email Alerts",
+            "icon":"notify-me",
             "tech": [
                 "PWA Implementation",
                 "Cloud FireStore",
@@ -48,6 +51,7 @@
         {
             "title": "Hand Cricket League",
             "desc": "Play Hand Cricket 👍 with your Friends from anywhere",
+            "icon":"hand-cricket",
             "tech": [
                 "PWA Implementation",
                 "Firebse RTDatabase",
@@ -61,6 +65,7 @@
         {
             "title": "KAL Pathippagam Website",
             "desc": "An e-commerce website for book purchase and orders",
+            "icon":"kal-pathippagam",
             "tech": [
                 "Firebse RTDatabase",
                 "Firebase Hosting",
@@ -71,8 +76,9 @@
             }
         },
         {
-            "title": "Rock Paper Scissorz 👊",
+            "title": "Rock Paper Scissorz",
             "desc": "Game of Rock Paper Scissors in Online version",
+            "icon":"rock-paper-scissorz",
             "tech": [
                 "Firebse RTDatabase",
                 "Firebase Hosting"
@@ -83,8 +89,9 @@
             }
         },
         {
-            "title": "Flames 🔥",
+            "title": "Flames",
             "desc": "Minimalistic FLAMES Calculator with Plain Javascript",
+            "icon":"flame-name",
             "tech": [
                 "WhatsApp Share API"
             ],
@@ -98,6 +105,7 @@
         {
             "title": "Thirukkural API",
             "desc": "API returning the requested Thirukkural",
+            "icon":"share-kural",
             "tech": [
                 "Firebase RTDatabase",
                 "Cloud Functions",
@@ -111,6 +119,7 @@
         {
             "title": "Cool WhatsApp API",
             "desc": "Funny API to send message from my WhatsApp number",
+            "icon":"whatsapp",
             "tech": [
                 "Heroku PaaS",
                 "NodeJS"
@@ -124,6 +133,7 @@
         {
             "title": "Grader",
             "desc": "Grade Points ( GPA / CGPA ) Calculator",
+            "icon":"grader",
             "tech": [
                 "AsyncStorage",
                 "ReactNative Paper",
@@ -137,6 +147,7 @@
         {
             "title": "Prompt",
             "desc": "Notification Reminder",
+            "icon":"notify-me",
             "tech": [
                 "AsyncStorage",
                 "ReactNative Paper",

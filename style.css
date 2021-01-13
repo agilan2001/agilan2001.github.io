@@ -82,9 +82,23 @@ body {
     background-color: darkred;
 }
 
+.proj_icon {
+    margin: 0px 5px;
+    border: 2px solid greenyellow;
+    padding: 2px;
+    border-radius: 20%;
+    transition: all 1s;
+}
+
+.proj_div:hover img {
+    border: 2px solid blue;
+}
+
 .proj_div_title {
+    display: flex;
     font-size: 20px;
     font-weight: bold;
+    align-items: center;
 }
 
 .proj_div a {
@@ -92,6 +106,7 @@ body {
 }
 
 .proj_div_desc {
+    margin-top: 5px;
     font-style: oblique;
     color: greenyellow;
 }
@@ -235,7 +250,7 @@ body {
     background-color: mediumpurple;
 }
 
-#resume_education_table{
+#resume_education_table {
     white-space: nowrap;
 }
 

@@ -155,7 +155,14 @@ const ProjCard = ({
   className: "proj_div"
 }, /*#__PURE__*/React.createElement("div", {
   className: "proj_div_title"
-}, data.title), /*#__PURE__*/React.createElement("div", {
+}, /*#__PURE__*/React.createElement("div", {
+  style: {
+    flex: '1'
+  }
+}, data.title), data.icon && /*#__PURE__*/React.createElement("img", {
+  class: "proj_icon",
+  src: "/icons/proj/" + data.icon + ".png"
+})), /*#__PURE__*/React.createElement("div", {
   className: "proj_div_desc"
 }, data.desc), /*#__PURE__*/React.createElement("div", {
   className: "proj_div_tech_tag"

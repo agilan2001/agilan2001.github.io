@@ -28,7 +28,7 @@ const ProgLangComp = () => {
 const CertComp = ({ data }) => (
     <div className="cert_comp">
         <img src={"./icons/" + data.issue + ".png"} style={{ width: '80px', margin: 'auto 10px' }} />
-        <div style={{height:'fit-content', margin:'auto 0'}}>
+        <div style={{ height: 'fit-content', margin: 'auto 0' }}>
             <div style={{ fontWeight: 'bold', fontSize: 'larger' }}>{data.title}</div>
             <div><span style={{ color: 'red' }}>{data.issue}</span></div>
             <span style={{ fontStyle: 'oblique', fontSize: 'smaller' }}>{data.date}</span>
@@ -68,7 +68,11 @@ ReactDOM.render(<TestimonComp />, document.getElementById("testimonial_div"))
 
 const ProjCard = ({ data }) => (
     <div className="proj_div">
-        <div className="proj_div_title">{data.title}</div>
+        <div className="proj_div_title">
+            <div style={{flex:'1'}}>{data.title}</div>
+            {data.icon && <img class={"proj_icon"} src={"/icons/proj/"+data.icon+".png"} />}
+        </div>
+
         <div className="proj_div_desc">{data.desc}</div>
         <div className="proj_div_tech_tag">Technologies:</div>
         <div className="proj_div_tech">
