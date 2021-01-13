@@ -71,15 +71,15 @@
             }
         },
         {
-            "title": "Rock Paper Scissors",
+            "title": "Rock Paper Scissorz 👊",
             "desc": "Game of Rock Paper Scissors in Online version",
             "tech": [
                 "Firebse RTDatabase",
                 "Firebase Hosting"
             ],
             "link": {
-                "<i style='color:black;' class='fab fa-github'></i> Git Repo": "https://github.com/agilan2001/rock_paper_scissor",
-                "<i class='fas fa-link'></i> Live Site": "https://agilan2001.github.io/rock_paper_scissor/"
+                "<i style='color:black;' class='fab fa-github'></i> Git Repo": "https://github.com/agilan2001/rock_paper_scissorz",
+                "<i class='fas fa-link'></i> Live Site": "https://rock-paper-scissorz.web.app/"
             }
         },
         {
