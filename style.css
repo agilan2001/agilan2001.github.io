@@ -91,7 +91,7 @@ body {
 }
 
 .proj_div:hover img {
-    border: 2px solid blue;
+    border: 2px solid red;
 }
 
 .proj_div_title {
