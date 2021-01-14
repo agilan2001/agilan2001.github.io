@@ -26,9 +26,10 @@ body {
     font-size: 25px;
     top: 45px;
     font-weight: bold;
-    font-style: oblique;
     color: blue;
-    text-align: center;
+    margin: auto;
+    width: 185px;
+    font-family: monospace;
 }
 
 .nav>li>a {
@@ -309,4 +310,22 @@ body {
     margin: 8px;
     position: relative;
     border-radius: 10px;
+}
+
+@keyframes main_desc_anim {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.main_desc_cursor {
+    display: inline-block;
+    background-color: black;
+    width: 1.8px;
+    height: 1.2em;
+    margin-left: 2px;
+    animation: main_desc_anim 0.2s infinite alternate;
 }
