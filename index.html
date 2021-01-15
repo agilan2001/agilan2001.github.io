@@ -265,9 +265,15 @@
       }
 
     }
+    
+
 
     var anim_words = ["earn", "ead", "ive"];
     var anim_i = -1, anim_j = 0, anim_k = -1, anim_delay = 0;
+
+    main_desc_span.innerHTML = anim_words[0];
+    main_desc.style.width = "max-content";
+    main_desc.style.width = main_desc.clientWidth+"px";
 
     setInterval(() => {
       if (anim_delay == 0) {
