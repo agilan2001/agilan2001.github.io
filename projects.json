@@ -121,7 +121,7 @@
             "desc": "Funny API to send message from my WhatsApp number",
             "icon":"whatsapp",
             "tech": [
-                "Heroku PaaS",
+                "AWS Lambda",
                 "NodeJS"
             ],
             "link": {
