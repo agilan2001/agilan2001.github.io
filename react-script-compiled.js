@@ -79,7 +79,7 @@ const CertComp = ({
 const TestimonComp = () => [{
   title: "Algorithmic ToolBox",
   url: "https://coursera.org/share/2ffcfeda1ad47ba3af1695d3c08cbf0e",
-  issue: "Coursera - University of California, San Diego",
+  issue: "Coursera - University of California",
   date: "9 Jan,2021"
 }, {
   title: "C Programming",

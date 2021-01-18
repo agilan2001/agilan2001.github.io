@@ -40,7 +40,7 @@ const CertComp = ({ data }) => (
 
 
 const TestimonComp = () => (
-    [{ title: "Algorithmic ToolBox", url: "https://coursera.org/share/2ffcfeda1ad47ba3af1695d3c08cbf0e", issue: "Coursera - University of California, San Diego", date: "9 Jan,2021" },
+    [{ title: "Algorithmic ToolBox", url: "https://coursera.org/share/2ffcfeda1ad47ba3af1695d3c08cbf0e", issue: "Coursera - University of California", date: "9 Jan,2021" },
     { title: "C Programming", url: "https://www.sololearn.com/Certificate/1089-14014563/pdf/", issue: "SoloLearn", date: "16 May,2019" },
     { title: "C++ Programming", url: "https://www.sololearn.com/Certificate/1051-14014563/pdf/", issue: "SoloLearn", date: "07 Dec,2019" },
     { title: "Java Programming", url: "https://www.sololearn.com/Certificate/1068-14014563/pdf/", issue: "SoloLearn", date: "22 Aug,2020" },
