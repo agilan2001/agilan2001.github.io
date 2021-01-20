@@ -94,11 +94,18 @@ body {
     border: 2px solid red;
 }
 
+
 .proj_div_title {
     display: flex;
     font-size: 20px;
     font-weight: bold;
     align-items: center;
+    transition: all 1s;
+}
+
+.proj_div:hover .proj_div_title {
+    padding: 0 10px;
+    color: orange;
 }
 
 .proj_div a {
