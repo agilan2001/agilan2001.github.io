@@ -66,3 +66,7 @@ node_modules/
 babel.config.json
 package-lock.json
 package.json
+lambda/serviceAccountKey.json
+
+!lambda/package.json
+!lambda/package-lock.json
