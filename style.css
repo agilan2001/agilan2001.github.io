@@ -19,7 +19,7 @@ body {
     color: crimson;
     font-family: 'Alfa Slab One';
     text-align: center;
-    animation: letter-anim 2s ease-in-out infinite alternate;
+    animation: letter-anim 1s ease-in-out infinite alternate;
 }
 
 #main_desc {
@@ -94,7 +94,6 @@ body {
     border: 2px solid red;
 }
 
-
 .proj_div_title {
     display: flex;
     font-size: 20px;
@@ -110,7 +109,7 @@ body {
 
 .proj_div a {
     font-weight: bold;
-    color:deepskyblue;
+    color: deepskyblue;
 }
 
 .proj_div_desc {
@@ -304,7 +303,7 @@ body {
         letter-spacing: normal;
     }
     100% {
-        letter-spacing: 10px;
+        letter-spacing: 5px;
     }
 }
 
@@ -335,4 +334,28 @@ body {
     height: 1.2em;
     margin-left: 2px;
     animation: main_desc_anim 0.2s infinite alternate;
+}
+
+.views_cont_div {
+    width: fit-content;
+    position: absolute;
+    right: 5px;
+    top: 10px;
+    border: 2px solid red;
+    text-align: center;
+    padding: 2px;
+    border-radius: 10px;
+    background-color: red;
+}
+
+.views_cnt_div {
+    font-size: 25px;
+    background-color: yellow;
+    border-radius: 10px 10px 0 0;
+    color: blue;
+    font-weight: bold;
+}
+
+.views_tag_div {
+    padding: 2px;
 }
