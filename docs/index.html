@@ -52,8 +52,7 @@
   <div id="hdr">
     <!--<img alt="logo" id="main_logo" src="images/logo.png">&nbsp; -->
     <div id="main_ttl">AGILAN</div>
-    <div id="main_desc">Code to L<span id="main_desc_span"></span><div class="main_desc_cursor">&nbsp;</div>
-    </div>
+    <div id="main_desc">Code to L<span id="main_desc_span"></span><div class="main_desc_cursor">&nbsp;</div></div>
     <div class="views_cont_div">
       <div class="views_cnt_div">25</div>
       <div class="views_tag_div">Views</div>
@@ -168,7 +167,8 @@
           </tr>
           <tr>
             <td class="resume_table_detail">Email</td>
-            <td colspan="2"><a href="mailto:agilanvlr2001@gmail.com" style="color: deepskyblue;">agilanvlr2001@gmail.com</a></td>
+            <td colspan="2"><a href="mailto:agilanvlr2001@gmail.com"
+                style="color: deepskyblue;">agilanvlr2001@gmail.com</a></td>
           </tr>
           <tr>
             <td class="resume_table_detail">Address</td>
@@ -246,6 +246,15 @@
 
     fetch("projects.json").then((res) => res.json()).then(data => populate_proj(data))
 
+
+    fetch('https://zxhxqzuqr3.execute-api.us-east-2.amazonaws.com/default/agi-pro-email', {
+      method: 'POST', // or 'PUT'
+      mode: 'no-cors',
+      body: JSON.stringify({
+        job: 'view_cnt',
+      }),
+    }).then(res=>res.json()).then(data=>console.log(data));
+
     function send_msg() {
       if (msg_area.value) {
 
@@ -263,13 +272,14 @@
           method: 'POST', // or 'PUT'
           mode: 'no-cors',
           body: JSON.stringify({
+            job: 'msg',
             name: msg_name.value, tel: msg_phone.value, mail: msg_mail.value, msg: msg_area.value, date: Date.now()
           }),
         })
       }
 
     }
-    
+
 
 
     var anim_words = ["earn", "ead", "ive"];
@@ -277,7 +287,7 @@
 
     main_desc_span.innerHTML = anim_words[0];
     main_desc.style.width = "max-content";
-    main_desc.style.width = (parseInt(main_desc.clientWidth)+2)+"px";
+    main_desc.style.width = (parseInt(main_desc.clientWidth) + 2) + "px";
 
     setInterval(() => {
       if (anim_delay == 0) {
