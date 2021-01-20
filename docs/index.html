@@ -249,11 +249,13 @@
 
     fetch('https://zxhxqzuqr3.execute-api.us-east-2.amazonaws.com/default/agi-pro-email', {
       method: 'POST', // or 'PUT'
-      mode: 'no-cors',
       body: JSON.stringify({
         job: 'view_cnt',
       }),
-    }).then(res=>res.json()).then(data=>console.log(data));
+    }).then(res=>res.json()).then(data=>{
+      document.querySelector(".views_cnt_div").innerHTML=data;
+      document.querySelector(".views_cont_div").style.opacity=1;
+    })
 
     function send_msg() {
       if (msg_area.value) {
