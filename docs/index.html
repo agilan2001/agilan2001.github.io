@@ -254,15 +254,7 @@
       }),
     }).then(res=>res.json()).then(data=>{
       document.querySelector(".views_cnt_div").innerHTML=data;
-      document.querySelector(".views_cont_div").style.opacity=1;
-      $(".views_cont_div").animate({
-        right:'5px',
-        easing:'swing'
-      },100)
-      $(".views_cont_div").animate({
-        top:'10px',
-        easing:'linear'
-      },200)
+      document.querySelector(".views_cont_div").style.animation = "views_anim 1s forwards";
     })
 
     function send_msg() {

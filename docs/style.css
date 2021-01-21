@@ -352,7 +352,7 @@ body {
 }
 
 .views_cnt_div {
-    font-size: 25px;
+    font-size: 20px;
     background-color: yellow;
     border-radius: 10px 10px 0 0;
     color: blue;
@@ -361,4 +361,24 @@ body {
 
 .views_tag_div {
     padding: 2px;
+}
+
+@keyframes views_anim {
+    0% {
+        top: 50%;
+        right: 50%;
+        transform: translate(50%, -50%) scale(3);
+    }
+    50% {
+        top: 50%;
+        right: 50%;
+        transform: translate(50%, -50%) scale(3);
+        opacity: 1;
+    }
+    100% {
+        top:10px;
+        right: 10px;
+        opacity: 1;
+        
+    }
 }
