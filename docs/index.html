@@ -84,7 +84,8 @@
       <div class="container">
         <div class="resume_header" style="color:deeppink">SKILL SET</div>
         <div style="text-align: center;font-size: 18px;">-- My <a href="#"
-            onclick="$('[href=\'#projects\']').tab('show');" style="color: deepskyblue;">Projects</a> speak better 😇 --</div>
+            onclick="$('[href=\'#projects\']').tab('show');" style="color: deepskyblue;">Projects</a> speak better 😇 --
+        </div>
         <hr>
         <div class="resume_skill_header">Web Technologies</div>
         <div id="web_tech_div" class="resume_skill_detail">
@@ -252,9 +253,11 @@
       body: JSON.stringify({
         job: 'view_cnt',
       }),
-    }).then(res=>res.json()).then(data=>{
-      document.querySelector(".views_cnt_div").innerHTML=data;
-      document.querySelector(".views_cont_div").style.animation = "views_anim 1s forwards";
+    }).then(res => res.json()).then(data => {
+      if (data > 300) {
+        document.querySelector(".views_cnt_div").innerHTML = data;
+        document.querySelector(".views_cont_div").style.animation = "views_anim 1s forwards";
+      }
     })
 
     function send_msg() {
