@@ -18,11 +18,7 @@ jobs:
           cd lambda
           npm install
           npm run build --if-present
-        env:
-          CI: true
-      - name: node-prune
-        run: |
-          npm install -g node-prune
+          npm install -g node prune
           node-prune
         env:
           CI: true
