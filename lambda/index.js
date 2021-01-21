@@ -56,9 +56,12 @@ exports.handler = async (event) => {
         ret_val = "DONE";
     }
     else if (body.job == "view_cnt") {
-        await db.ref("view_cnt").transaction((data)=>{
-            ret_val = data+1;
-            return ret_val;
+        await db.ref("view_cnt").transaction((data) => {
+            return data + 1;
+        }, (error, commited, snap) => {
+            if (commited) {
+                ret_val = snap.val()
+            }
         })
     }
     return ({
