@@ -71,3 +71,5 @@ lambda/serviceAccountKey.json
 !lambda/package.json
 !lambda/package-lock.json
 docs/css/bootstrap.css
+
+unprocessed/
