@@ -54,7 +54,7 @@
             "icon":"hand-cricket",
             "tech": [
                 "PWA Implementation",
-                "Firebse RTDatabase",
+                "Firebase RTDatabase",
                 "Firebase Hosting"
             ],
             "link": {
