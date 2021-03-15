@@ -39,4 +39,4 @@ jobs:
           aws_region: us-east-2
           function_name: agi-pro-email
           zip_file: ./lambda/bundle.zip
-          timeout: 10
+          timeout: 10 
