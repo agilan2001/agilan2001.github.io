@@ -6,20 +6,22 @@ body {
 #hdr {
     background-image: linear-gradient(white, lightseagreen);
     padding: 5px;
+    display: flex;
 }
 
 #main_logo {
-    height: 65px;
+    height: 80px;
+    margin: 5px;
 }
 
 #main_ttl {
     font-size: 40px;
     white-space: nowrap;
-    top: 15px;
+    /* top: 15px; */
     color: crimson;
     font-family: 'Alfa Slab One';
-    text-align: center;
-    animation: letter-anim 1s ease-in-out infinite alternate;
+    /* text-align: center; */
+    /* animation: letter-anim 1s ease-in-out infinite alternate; */
 }
 
 #main_desc {
@@ -27,7 +29,7 @@ body {
     top: 45px;
     font-weight: bold;
     color: blue;
-    margin: auto;
+    margin-left: 5px ;
     font-family: monospace;
 }
 
@@ -297,7 +299,7 @@ body {
     padding: 2px;
     transition: all 0.5s;
 }
-
+/* 
 @keyframes letter-anim {
     0% {
         letter-spacing: normal;
@@ -305,7 +307,7 @@ body {
     100% {
         letter-spacing: 5px;
     }
-}
+} */
 
 .cert_comp {
     display: flex;
