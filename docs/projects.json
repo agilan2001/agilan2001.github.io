@@ -1,6 +1,24 @@
 {
     "WEB": [
         {
+            "title": "Quizinato",
+            "desc": "PWA for Quiz Practice and Challenges",
+            "icon":"quizinato",
+            "tech": [
+                "ReactJS Framework",
+                "Firebase Cloud Messaging",
+                "Firebase RealTime Database",
+                "Firebase Hosting",
+                "AWS Lambda functions",
+                "Bootstrap CSS",
+                "PWA Implementation"
+            ],
+            "link": {
+                "<i style='color:black;' class='fab fa-github'></i> Git Repo": "https://github.com/3-bro-grammers/Quizz_app",
+                "<i class='fas fa-link'></i> Live Site": "https://quizinato.web.app/"
+            }
+        },
+        {
             "title": "Mail-Opened?",
             "desc": "Web App to implant Invisible Email Trackers to notify when an Email is opened",
             "icon":"mail-opened",
