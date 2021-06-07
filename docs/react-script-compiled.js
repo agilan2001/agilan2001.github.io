@@ -152,6 +152,7 @@ ReactDOM.render( /*#__PURE__*/React.createElement(TestimonComp, null), document.
 const ProjCard = ({
   data
 }) => /*#__PURE__*/React.createElement("div", {
+  "data-aos": "flip-right",
   className: "proj_div"
 }, /*#__PURE__*/React.createElement("div", {
   className: "proj_div_title"

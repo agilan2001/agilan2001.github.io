@@ -67,7 +67,7 @@ ReactDOM.render(<ProgLangComp />, document.getElementById("prog_lang_div"))
 ReactDOM.render(<TestimonComp />, document.getElementById("testimonial_div"))
 
 const ProjCard = ({ data }) => (
-    <div className="proj_div">
+    <div data-aos="flip-right" className="proj_div">
         <div className="proj_div_title">
             <div style={{flex:'1'}}>{data.title}</div>
             {data.icon && <img class={"proj_icon"} src={"/icons/proj/"+data.icon+".png"} />}
