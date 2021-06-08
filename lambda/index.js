@@ -38,7 +38,7 @@ exports.handler = async (event) => {
             service: 'gmail',
             auth: {
                 user: 'agilanvlr2001@gmail.com',
-                pass: 'jyumjymdymforksp'
+                pass: process.env.GOOGLE_APP_PASS
             }
         });
 
