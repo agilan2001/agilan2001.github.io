@@ -1,5 +1,5 @@
 /* BABEL COMPILE COMMAND
-npx babel public/react-script.js --out-file public/react-script-compiled.js
+npx babel docs/react-script.js --out-file docs/react-script-compiled.js
 */
 const ImgCaption = ({ data }) => (
     <div className="imgCaption">
@@ -26,7 +26,7 @@ const ProgLangComp = () => {
 }
 
 const DevTechComp = () => {
-    var lang = ["Firebase", "AWS", "Heroku", "GIT"];
+    var lang = ["Firebase", "AWS", "Heroku", "Git"];
     return (
         lang.map((e, i) => (
             <ImgCaption data={e} />

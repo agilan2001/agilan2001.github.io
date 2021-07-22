@@ -1,5 +1,5 @@
 /* BABEL COMPILE COMMAND
-npx babel public/react-script.js --out-file public/react-script-compiled.js
+npx babel docs/react-script.js --out-file docs/react-script-compiled.js
 */
 const ImgCaption = ({
   data
@@ -37,7 +37,7 @@ const ProgLangComp = () => {
 };
 
 const DevTechComp = () => {
-  var lang = ["Firebase", "AWS", "HEROKU", "GIT"];
+  var lang = ["Firebase", "AWS", "Heroku", "Git"];
   return lang.map((e, i) => /*#__PURE__*/React.createElement(ImgCaption, {
     data: e
   }));
