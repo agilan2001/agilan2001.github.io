@@ -3,6 +3,10 @@ body {
     color: white;
 }
 
+div{
+    cursor: default;
+}
+
 #hdr {
     background-image: linear-gradient(white, lightseagreen);
     padding: 5px;
