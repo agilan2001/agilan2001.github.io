@@ -36,6 +36,13 @@ const ProgLangComp = () => {
   }));
 };
 
+const DevTechComp = () => {
+  var lang = ["Firebase", "AWS", "HEROKU", "GIT"];
+  return lang.map((e, i) => /*#__PURE__*/React.createElement(ImgCaption, {
+    data: e
+  }));
+};
+
 const CertComp = ({
   data
 }) => /*#__PURE__*/React.createElement("div", {
@@ -147,6 +154,7 @@ const TestimonComp = () => [{
 
 ReactDOM.render( /*#__PURE__*/React.createElement(WebTechComp, null), document.getElementById("web_tech_div"));
 ReactDOM.render( /*#__PURE__*/React.createElement(ProgLangComp, null), document.getElementById("prog_lang_div"));
+ReactDOM.render( /*#__PURE__*/React.createElement(DevTechComp, null), document.getElementById("dev_tech_div"));
 ReactDOM.render( /*#__PURE__*/React.createElement(TestimonComp, null), document.getElementById("testimonial_div"));
 
 const ProjCard = ({

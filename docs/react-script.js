@@ -25,6 +25,15 @@ const ProgLangComp = () => {
     )
 }
 
+const DevTechComp = () => {
+    var lang = ["Firebase", "AWS", "Heroku", "GIT"];
+    return (
+        lang.map((e, i) => (
+            <ImgCaption data={e} />
+        ))
+    )
+}
+
 const CertComp = ({ data }) => (
     <div className="cert_comp">
         <img src={"./icons/" + data.issue + ".png"} style={{ width: '80px', margin: 'auto 10px' }} />
@@ -64,7 +73,9 @@ const TestimonComp = () => (
 
 ReactDOM.render(<WebTechComp />, document.getElementById("web_tech_div"))
 ReactDOM.render(<ProgLangComp />, document.getElementById("prog_lang_div"))
+ReactDOM.render(<DevTechComp />, document.getElementById("dev_tech_div"))
 ReactDOM.render(<TestimonComp />, document.getElementById("testimonial_div"))
+
 
 const ProjCard = ({ data }) => (
     <div data-aos="flip-right" className="proj_div">
