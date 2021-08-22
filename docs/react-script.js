@@ -59,8 +59,11 @@ const TestimonComp = () => (
     { title: "JQuery Course", url: "https://www.sololearn.com/Certificate/1082-14014563/pdf/", issue: "SoloLearn", date: "25 July,2020" },
     { title: "React Course", url: "https://www.sololearn.com/Certificate/1097-14014563/pdf/", issue: "SoloLearn", date: "25 July,2020" },
     { title: "Problem Solving", url: "https://www.hackerrank.com/certificates/8ae71dec3276", issue: "HackerRank", date: "24 Dec,2020" },
-    { title: "JavaScript (Basic)", url: "https://www.hackerrank.com/certificates/0f563ef4302a", issue: "HackerRank", date: "26 Aug,2020" },
     { title: "Java (Basic)", url: "https://www.hackerrank.com/certificates/8f1b03694fc9", issue: "HackerRank", date: "15 Dec,2020" },
+    { title: "JavaScript (Intermediate)", url: "https://www.hackerrank.com/certificates/30585ef968aa", issue: "HackerRank", date: "28 July,2021" },
+    { title: "NodeJS", url: "https://www.hackerrank.com/certificates/08391d87031f", issue: "HackerRank", date: "10 July,2021" },
+    { title: "SQL (Intermediate)", url: "https://www.hackerrank.com/certificates/bf126ba18a4d", issue: "HackerRank", date: "22 Aug,2021" },
+    { title: "ReactJS", url: "https://www.hackerrank.com/certificates/4711258d96ea", issue: "HackerRank", date: "22 Aug,2021" },
     { title: "TypeMaster", url: "https://data.typeracer.com/pit/profile?user=agilan2001&universe=play&ref=badge", issue: "TypeRacer", date: "5 Jan,2021" },].map(
         (e, i) => (
             <CertComp data={e} />

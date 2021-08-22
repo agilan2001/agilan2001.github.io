@@ -134,15 +134,30 @@ const TestimonComp = () => [{
   issue: "HackerRank",
   date: "24 Dec,2020"
 }, {
-  title: "JavaScript (Basic)",
-  url: "https://www.hackerrank.com/certificates/0f563ef4302a",
-  issue: "HackerRank",
-  date: "26 Aug,2020"
-}, {
   title: "Java (Basic)",
   url: "https://www.hackerrank.com/certificates/8f1b03694fc9",
   issue: "HackerRank",
   date: "15 Dec,2020"
+}, {
+  title: "JavaScript (Intermediate)",
+  url: "https://www.hackerrank.com/certificates/30585ef968aa",
+  issue: "HackerRank",
+  date: "28 July,2021"
+}, {
+  title: "NodeJS",
+  url: "https://www.hackerrank.com/certificates/08391d87031f",
+  issue: "HackerRank",
+  date: "10 July,2021"
+}, {
+  title: "SQL (Intermediate)",
+  url: "https://www.hackerrank.com/certificates/bf126ba18a4d",
+  issue: "HackerRank",
+  date: "22 Aug,2021"
+}, {
+  title: "ReactJS",
+  url: "https://www.hackerrank.com/certificates/4711258d96ea",
+  issue: "HackerRank",
+  date: "22 Aug,2021"
 }, {
   title: "TypeMaster",
   url: "https://data.typeracer.com/pit/profile?user=agilan2001&universe=play&ref=badge",
