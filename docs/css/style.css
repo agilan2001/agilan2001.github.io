@@ -3,7 +3,7 @@ body {
     color: white;
 }
 
-div{
+div {
     cursor: default;
 }
 
@@ -33,7 +33,7 @@ div{
     top: 45px;
     font-weight: bold;
     color: blue;
-    margin-left: 5px ;
+    margin-left: 5px;
     font-family: monospace;
 }
 
@@ -82,6 +82,7 @@ div{
     border: 1px solid floralwhite;
     min-height: 220px;
     transition: background-color 1s;
+    z-index: 5;
 }
 
 .proj_div:hover {
@@ -137,6 +138,10 @@ div{
     position: absolute;
     bottom: 10px;
     right: 10px;
+}
+
+#hdr, .nav, .proj_grp_head {
+    z-index: 10;
 }
 
 #msg_tbl {
@@ -279,6 +284,7 @@ div{
 
 #projects {
     background-image: linear-gradient(90deg, rgba(0, 100, 0, 0.5), rgba(0, 100, 0, 1) 50%, rgba(0, 100, 0, 0.5));
+    background-attachment: fixed;
 }
 
 #resume {
@@ -303,6 +309,7 @@ div{
     padding: 2px;
     transition: all 0.5s;
 }
+
 /* 
 @keyframes letter-anim {
     0% {
@@ -382,9 +389,29 @@ div{
         opacity: 1;
     }
     100% {
-        top:10px;
+        top: 10px;
         right: 10px;
         opacity: 1;
-        
     }
+}
+
+.star {
+    background: white;
+    width: 2px;
+    height: 2px;
+    position: fixed;
+    border-radius: 50%;
+    animation: star_blink 2s ease-in-out 0s infinite alternate-reverse;
+}
+
+@keyframes star_blink {
+
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+    
 }
